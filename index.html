@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Root | Premium Organic Turmeric</title>
+  <meta name="description"
+    content="Discover GoldenRoot, the best organic turmeric powder in India. Curcumin-rich, farm-fresh turmeric wellness products, hygienically processed. Pure, natural Ayurvedic turmeric powder exporter, manufacturer, and supplier.">
+  <meta name="keywords"
+    content="Premium Turmeric Powder, Pure Turmeric Powder, Golden Milk Turmeric, Organic Turmeric Powder, High Curcumin Turmeric, Turmeric for Milk, Natural Turmeric Powder, Best Turmeric Powder in India, Turmeric Wellness Products, Ayurvedic Turmeric Powder, Farm Fresh Turmeric, Turmeric Manufacturer in India, Turmeric Supplier in India, Turmeric Exporter, Curcumin Rich Turmeric">
+  <link rel="stylesheet" href="style.css?v=2">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <p>10% Off Today - Use Code <strong>GOLDEN10</strong> at Checkout</p>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <i class="fa-solid fa-leaf"></i> GoldenRoot
+      </div>
+      <div class="nav-links-wrapper">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="types.html">Turmeric Types</a></li>
+          <li><a href="dailylife.html">Daily Life</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="nav-icons">
+        <a href="types.html#live-market-section" class="market-nav-icon" title="Check Live Turmeric Market Rates">
+          <i class="fa-solid fa-chart-line"></i>
+          <span class="live-pulse-dot"></span>
+        </a>
+        <div class="cart-icon-wrapper" onclick="toggleCart()">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-badge" id="nav-cart-badge">0</span>
+        </div>
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <div class="badge"><i class="fa-solid fa-hands-holding-circle"></i> 100% Organic & Sustainable</div>
+      <h1>We Don't Just Grow Crops.<br><span>We Grow Opportunities.</span></h1>
+      <p>Premium turmeric crafted from sustainable farms for modern wellness.</p>
+      <div class="hero-btns">
+        <a href="#products" class="btn btn-primary">Explore Products <i class="fa-solid fa-arrow-right"
+            style="margin-left: 5px;"></i></a>
+        <a href="about.html" class="btn btn-secondary">Our Story</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><span class="highlight">10k+</span> Happy Customers</div>
+        <div class="stat"><span class="highlight">5%</span> Curcumin Content</div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <!-- Ambient background particle canvas -->
+      <canvas class="hero-bg-canvas" id="hero-particles"></canvas>
+      <div class="image-wrapper">
+        <img src="assets/hero_turmeric_realistic.jpg" alt="Premium GoldenRoot Turmeric Mockup">
+        <div class="floating-badge top-right"><i class="fa-solid fa-star"></i> Top Rated</div>
+        <div class="floating-badge bottom-left"><i class="fa-solid fa-shield-halved"></i> Certified Organic</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Trust Badges Section -->
+  <section class="trust-badges">
+    <div class="trust-container">
+      <div class="trust-item"><i class="fa-solid fa-leaf"></i><span>100% Organic</span></div>
+      <div class="trust-item"><i class="fa-solid fa-flask-vial"></i><span>Lab Tested Purity</span></div>
+      <div class="trust-item"><i class="fa-solid fa-shield-virus"></i><span>No Chemicals</span></div>
+      <div class="trust-item"><i class="fa-solid fa-rotate-left"></i><span>30-Day Returns</span></div>
+    </div>
+  </section>
+
+  <!-- Slogan Banner Section -->
+  <section class="slogan-banner">
+    <div class="slogan-container">
+      <i class="fa-solid fa-quote-left quote-icon"></i>
+      <h2>We Don't Just Grow Crops.<br><span>We Grow Opportunities.</span></h2>
+      <p>Empowering local farming communities, preserving sacred soil fertility, and bringing ayurvedic purity straight
+        to your home.</p>
+      <div class="slogan-line"></div>
+    </div>
+  </section>
+
+  <!-- Premium Turmeric Range Showcase Section -->
+  <section id="range-showcase" class="range-showcase">
+    <div class="section-title">
+      <h2>Our Premium <span>Turmeric Range</span></h2>
+      <p>Pure • Natural • Powerful Ayurvedic Formulations</p>
+    </div>
+    <div class="range-container">
+      <div class="range-infographic-wrapper">
+        <img src="assets/turmeric_range_infographic.jpg"
+          alt="Our Premium Turmeric Range - Golden Milk, Black Pepper Blend, Latte Mix, Organic Powder, Wellness Shots Mix">
+      </div>
+      <div class="range-benefits-strip">
+        <div class="range-benefit-item">
+          <i class="fa-solid fa-leaf"></i>
+          <h4>Natural Ingredients</h4>
+          <p>100% pure organic plant extracts</p>
+        </div>
+        <div class="range-benefit-item">
+          <i class="fa-solid fa-ban"></i>
+          <h4>No Additives</h4>
+          <p>Completely free from fillers or preservatives</p>
+        </div>
+        <div class="range-benefit-item">
+          <i class="fa-solid fa-vial-circle-check"></i>
+          <h4>Lab Tested</h4>
+          <p>Rigorous purity and curcumin analysis</p>
+        </div>
+        <div class="range-benefit-item">
+          <i class="fa-solid fa-award"></i>
+          <h4>Premium Quality</h4>
+          <p>Hand-selected Ayurvedic gold standard</p>
+        </div>
+      </div>
+      <div class="range-cta">
+        <a href="products.html" class="btn btn-primary">Explore Full Shop <i class="fa-solid fa-arrow-right"
+            style="margin-left: 5px;"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Farm-to-Bottle Story Section (Compact Interactive Dashboard Slider) -->
+  <section class="journey-compact-section" id="farm-to-bottle">
+    <div class="journey-container">
+
+      <!-- Section Header -->
+      <div class="journey-header">
+        <div class="journey-title-wrap">
+          <h4>Farm-to-Bottle Story</h4>
+          <h2>Our Organic Agricultural Pipeline</h2>
+        </div>
+        <div class="journey-motto">
+          "From Soil to Success."
+        </div>
+      </div>
+
+      <!-- Glowing Stepping Timeline Stepper (Top Navigation Bar) -->
+      <div class="journey-stepper-container">
+        <div class="journey-stepper-track">
+          <div class="journey-stepper-progress" id="journey-stepper-progress"></div>
+        </div>
+        <div class="journey-stepper-nodes">
+          <button class="stepper-node active" data-step="0"><i
+              class="fa-solid fa-seedling"></i><span>Farm</span></button>
+          <button class="stepper-node" data-step="1"><i class="fa-solid fa-tractor"></i><span>Harvest</span></button>
+          <button class="stepper-node" data-step="2"><i class="fa-solid fa-industry"></i><span>Process</span></button>
+          <button class="stepper-node" data-step="3"><i class="fa-solid fa-flask-vial"></i><span>Test</span></button>
+          <button class="stepper-node" data-step="4"><i class="fa-solid fa-box-open"></i><span>Package</span></button>
+          <button class="stepper-node" data-step="5"><i
+              class="fa-solid fa-truck-fast"></i><span>Delivery</span></button>
+        </div>
+      </div>
+
+      <!-- Main Slider Area -->
+      <div class="journey-slider-viewport">
+        <!-- Floating Navigation Chevrons -->
+        <button class="journey-arrow-btn prev-btn" id="journey-prev" aria-label="Previous step">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="journey-arrow-btn next-btn" id="journey-next" aria-label="Next step">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <!-- Slider Track for slides -->
+        <div class="journey-slider-track" id="journey-slider-track">
+
+          <!-- Slide 1: 🌱 Farm -->
+          <div class="journey-slide active" data-slide="0">
+            <div class="journey-media-panel">
+              <div class="ken-burns-bg kb-zoom-in">
+                <img src="assets/step1_land_prep.png"
+                  alt="Fertile soils and land preparation at GoldenRoot organic farms">
+              </div>
+            </div>
+            <div class="journey-text-panel">
+              <div class="journey-info-card">
+                <span class="stage-badge"><i class="fa-solid fa-leaf"></i> Cultivation</span>
+                <h3>🌱 Pure <span>Farming</span></h3>
+                <p>Our journey begins in the fertile valleys of Spice Valley, where soil quality is meticulously
+                  analyzed. Multi-generational farming families nurture nutrient-dense crops organically, planting seeds
+                  at the ideal monsoonal breakout without any pesticides or chemicals.</p>
+                <div class="journey-icon-wrap"><i class="fa-solid fa-seedling"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: 🚜 Harvest -->
+          <div class="journey-slide" data-slide="1">
+            <div class="journey-media-panel">
+              <div class="ken-burns-bg kb-pan-left">
+                <img src="assets/step4_harvest_roots.jpg" alt="Harvesting mature curcumin-rich turmeric roots">
+              </div>
+            </div>
+            <div class="journey-text-panel">
+              <div class="journey-info-card">
+                <span class="stage-badge"><i class="fa-solid fa-tractor"></i> Maturity</span>
+                <h3>🚜 Meticulous <span>Harvest</span></h3>
+                <p>After 7–9 months of organic care, the turmeric rhizomes reach peak curcumin concentration (5-6%+).
+                  Roots are harvested carefully by hand to preserve the delicate essential oils and sorted instantly to
+                  select only the gold-grade specimens.</p>
+                <div class="journey-icon-wrap"><i class="fa-solid fa-hands-holding"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: 🏭 Processing -->
+          <div class="journey-slide" data-slide="2">
+            <div class="journey-media-panel">
+              <div class="ken-burns-bg kb-pan-right">
+                <img src="assets/step7_drying_slices.jpg" alt="Traditional boiling curing and sun drying slices">
+              </div>
+            </div>
+            <div class="journey-text-panel">
+              <div class="journey-info-card">
+                <span class="stage-badge"><i class="fa-solid fa-industry"></i> Processing</span>
+                <h3>🏭 Cold <span>Curing & Milling</span></h3>
+                <p>Cleaned specimens are boiled in a hygienic, controlled environment to cure the color, then spread
+                  across clean sun-drying yards. The fully dried turmeric fingers are polished and slow-milled under low
+                  temperatures to preserve natural curcumin structure.</p>
+                <div class="journey-icon-wrap"><i class="fa-solid fa-gears"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4: 🔬 Testing -->
+          <div class="journey-slide" data-slide="3">
+            <div class="journey-media-panel">
+              <div class="ken-burns-bg kb-zoom-in">
+                <img src="assets/step10_test_petri.png" alt="Laboratory testing for curcumin percentage and purity">
+              </div>
+            </div>
+            <div class="journey-text-panel">
+              <div class="journey-info-card">
+                <span class="stage-badge"><i class="fa-solid fa-flask-vial"></i> Quality Control</span>
+                <h3>🔬 Rigorous <span>Lab Testing</span></h3>
+                <p>Every single batch is analyzed inside state-of-the-art laboratories. Auditors run strict tests
+                  checking for absolute purity, active essential oils, moisture control, and verifying high curcumin
+                  composition (up to 6%), certifying no chemical additives.</p>
+                <div class="journey-icon-wrap"><i class="fa-solid fa-vial-circle-check"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5: 📦 Packaging -->
+          <div class="journey-slide" data-slide="4">
+            <div class="journey-media-panel">
+              <div class="ken-burns-bg kb-zoom-out">
+                <img src="assets/step11_packaging.png" alt="Kraft pouch standing packaging of organic turmeric powder">
+              </div>
+            </div>
+            <div class="journey-text-panel">
+              <div class="journey-info-card">
+                <span class="stage-badge"><i class="fa-solid fa-box-open"></i> Hygiene</span>
+                <h3>📦 Premium <span>Packaging</span></h3>
+                <p>Once approved, the powder is packed in eco-friendly, food-grade Kraft stand-up pouches. The airtight
+                  seal preserves color, freshness, and vital antioxidants, locking the active nutrients inside until it
+                  reaches your kitchen.</p>
+                <div class="journey-icon-wrap"><i class="fa-solid fa-box-archive"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 6: 🚚 Delivery -->
+          <div class="journey-slide" data-slide="5">
+            <div class="journey-media-panel">
+              <div class="ken-burns-bg kb-pan-left">
+                <img src="assets/premium_golden_milk.jpg"
+                  alt="Global logistics shipping premium turmeric straight to homes">
+              </div>
+            </div>
+            <div class="journey-text-panel">
+              <div class="journey-info-card">
+                <span class="stage-badge"><i class="fa-solid fa-truck-fast"></i> Logistics</span>
+                <h3>🚚 Global <span>Wellness Delivery</span></h3>
+                <p>From local farms to your home, our efficient distribution network ships fresh, curcumin-rich organic
+                  turmeric straight to your doorstep globally. Pure Ayurvedic wellness is served directly to you, from
+                  soil to success!</p>
+                <div class="journey-icon-wrap"><i class="fa-solid fa-truck-ramp-box"></i></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Video Showcase Callout Section -->
+  <section class="video-callout-banner">
+    <div class="video-callout-container">
+      <span class="badge" style="background: rgba(242, 159, 5, 0.2); color: var(--primary);"><i class="fa-solid fa-film"></i> Real Farm & Process Videos</span>
+      <h2>Watch Our <span>Soil to Success</span> Journey</h2>
+      <p>Watch our farmers in action: organic root harvesting, traditional boiling, natural sun drying, and cold-milling videos.</p>
+      <a href="gallery.html" class="btn btn-primary"><i class="fa-solid fa-circle-play"></i> Watch All Farm & Process Videos</a>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="section-title">
+      <h2>Loved by <span>Thousands</span></h2>
+      <p>Hear from our healthy and happy customers.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>"This is the freshest turmeric powder I have ever used. My joints feel incredibly better since I started
+          making golden milk every night!"</p>
+        <h4>Sarah M.</h4>
+        <span class="verified"><i class="fa-solid fa-circle-check"></i> Verified Buyer</span>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>"The color and aroma are out of this world. You can easily tell there are no artificial dyes in this. I'm a
+          customer for life."</p>
+        <h4>David L.</h4>
+        <span class="verified"><i class="fa-solid fa-circle-check"></i> Verified Buyer</span>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <p>"Great customer service and fantastic quality packaging. The curcumin capsules are very potent. Highly
+          recommended."</p>
+        <h4>Emily R.</h4>
+        <span class="verified"><i class="fa-solid fa-circle-check"></i> Verified Buyer</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq-section">
+    <div class="section-title">
+      <h2>Frequently Asked <span>Questions</span></h2>
+      <p>Everything you need to know about our products.</p>
+    </div>
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">What is curcumin and why is it important?<i
+            class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-answer">
+          <p>Curcumin is the main active ingredient in turmeric. It has powerful anti-inflammatory effects and is a very
+            strong antioxidant. Our turmeric is lab-tested to ensure a high curcumin content (5%+).</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How do I make Golden Milk?<i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-answer">
+          <p>Mix 1 tsp of our turmeric powder in a cup of warm milk (or almond/oat milk). Add a pinch of black pepper
+            (enhances absorption by 2000%), and sweeten with honey to taste.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do you ship internationally?<i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-answer">
+          <p>Currently, we ship to the US and Canada. We are working on expanding our logistics to offer worldwide
+            shipping very soon!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Homepage SEO Content Section -->
+  <section class="seo-info-section">
+    <div class="seo-container">
+      <div class="section-title">
+        <h2>Premium Turmeric Powder – <span>Pure, Natural & Rich in Curcumin</span></h2>
+      </div>
+      <div class="seo-content-block">
+        <p>Welcome to <strong>Golden Milk Turmeric</strong>, your trusted source for <strong>Premium Turmeric
+            Powder</strong> and other premium spices. As a leading <strong>Turmeric Manufacturer in India</strong>,
+          trusted <strong>Turmeric Supplier in India</strong>, and a premier global <strong>Turmeric Exporter</strong>,
+          we carefully source and process our <strong>High Curcumin Turmeric</strong> using advanced manufacturing
+          standards. Every step is focused on delivering <strong>Pure Turmeric Powder</strong> and premium
+          <strong>Curcumin Rich Turmeric</strong> while preserving its natural color, aroma, and goodness.
+        </p>
+        <p>Whether you're looking for <strong>Turmeric for Milk</strong>, wellness drinks, cooking, or healthy living,
+          we are committed to delivering <strong>Natural Turmeric Powder</strong> and high-quality <strong>Organic
+            Turmeric Powder</strong>. Our brand represents the <strong>Best Turmeric Powder in India</strong>, providing
+          <strong>Farm Fresh Turmeric</strong> and state-of-the-art <strong>Turmeric Wellness Products</strong> to
+          families worldwide who wish to incorporate authentic, pure <strong>Ayurvedic Turmeric Powder</strong> into
+          their daily routines.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="newsletter-container">
+      <div class="newsletter-content">
+        <h2>Join the <span>Golden</span> Family</h2>
+        <p>Subscribe to our newsletter and get 15% off your first order, plus free wellness tips sent to your inbox.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3><i class="fa-solid fa-leaf"></i> GoldenRoot</h3>
+        <p><strong>From Soil to Success.</strong><br>Empowering Farmers. Enabling Business. Delivering Wellness.</p>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#products">Shop</a></li>
+          <li><a href="#">Wholesale Inquiries</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><i class="fa-solid fa-envelope"></i> patilkundan6522@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +91 9689212775</p>
+        <p><i class="fa-solid fa-location-dot"></i> Plot no 3 gaytri nagar station road Raver</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 GoldenRoot Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+  <div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button class="close-cart" onclick="toggleCart()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-items" id="cart-items-container">
+      <!-- Cart items injected via JS -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Subtotal</span>
+        <span id="cart-total-price">₹0.00</span>
+      </div>
+      <p class="taxes-notice">Taxes and shipping calculated at checkout</p>
+      <button class="btn btn-primary checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <script>
+    // Navigation Hamburger
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+      });
+    });
+
+
+
+    // FAQ Accordion
+    const faqs = document.querySelectorAll('.faq-question');
+    faqs.forEach(faq => {
+      faq.addEventListener('click', () => {
+        faq.classList.toggle('active');
+        const answer = faq.nextElementSibling;
+        if (faq.classList.contains('active')) {
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        } else {
+          answer.style.maxHeight = '0';
+        }
+      });
+    });
+
+    // Cart Logic
+    let cart = JSON.parse(localStorage.getItem('goldenRootCart')) || [];
+
+    function saveCart() {
+      localStorage.setItem('goldenRootCart', JSON.stringify(cart));
+      renderCart();
+    }
+
+    function addToCart(id, name, price, img) {
+      const existing = cart.find(item => item.id === id);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push({ id, name, price, img, quantity: 1 });
+      }
+      saveCart();
+      const overlay = document.querySelector('.cart-overlay');
+      if (!overlay.classList.contains('active')) {
+        toggleCart(); // Open cart to show user
+      }
+    }
+
+    function removeFromCart(id) {
+      cart = cart.filter(item => item.id !== id);
+      saveCart();
+    }
+
+    function updateQuantity(id, delta) {
+      const item = cart.find(item => item.id === id);
+      if (item) {
+        item.quantity += delta;
+        if (item.quantity <= 0) removeFromCart(id);
+        else saveCart();
+      }
+    }
+
+    function renderCart() {
+      const container = document.getElementById('cart-items-container');
+      const badgeContainer = document.getElementById('nav-cart-badge');
+      const totalPriceEl = document.getElementById('cart-total-price');
+
+      let totalItems = 0;
+      let totalPrice = 0;
+
+      container.innerHTML = '';
+
+      if (cart.length === 0) {
+        container.innerHTML = '<p class="empty-cart"><i class="fa-solid fa-basket-shopping"></i><br>Your cart is empty.</p>';
+      } else {
+        cart.forEach(item => {
+          totalItems += item.quantity;
+          totalPrice += item.price * item.quantity;
+
+          container.innerHTML += `
+            <div class="cart-item">
+              <img src="${item.img}" alt="${item.name}">
+              <div class="cart-item-details">
+                <h4>${item.name}</h4>
+                <div class="cart-item-price">₹${item.price.toFixed(2)}</div>
+                <div class="cart-item-quantity">
+                  <button onclick="updateQuantity(${item.id}, -1)">-</button>
+                  <span>${item.quantity}</span>
+                  <button onclick="updateQuantity(${item.id}, 1)">+</button>
+                </div>
+              </div>
+              <button class="remove-item" onclick="removeFromCart(${item.id})"><i class="fa-solid fa-trash"></i></button>
+            </div>
+          `;
+        });
+      }
+
+      badgeContainer.textContent = totalItems;
+      totalPriceEl.textContent = '₹' + totalPrice.toFixed(2);
+    }
+
+    function toggleCart() {
+      document.getElementById('cart-sidebar').classList.toggle('active');
+      document.getElementById('cart-overlay').classList.toggle('active');
+    }
+
+    function checkout() {
+      if (cart.length === 0) return alert('Your cart is empty');
+      alert('Proceeding to checkout with ' + cart.length + ' items!\nTotal: ₹' + document.getElementById('cart-total-price').innerText.replace('₹', ''));
+    }
+
+    // Initial render
+    renderCart();
+
+    // Change nav style on scroll
+    window.addEventListener('scroll', () => {
+
+
+      const nav = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
+  <script src="cursor.js"></script>
+</body>
+
+</html>

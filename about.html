@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Golden Root - Premium Organic Turmeric</title>
+  <link rel="stylesheet" href="style.css?v=4">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&family=Marcellus&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Dedicated About Page Styles */
+    .about-hero {
+      background: linear-gradient(to right, rgba(253, 252, 247, 0.96), rgba(254, 246, 228, 0.93)), url('assets/turmeric_harvest.png') center/cover no-repeat;
+      padding: 130px 5% 80px;
+      text-align: center;
+      border-bottom: 1px solid rgba(184, 107, 0, 0.08);
+      position: relative;
+    }
+
+    .about-hero::after {
+      content: '✦ ✿ ✦';
+      display: block;
+      margin-top: 25px;
+      font-size: 15px;
+      color: var(--primary-dark);
+      letter-spacing: 6px;
+    }
+
+    .about-hero h1 {
+      font-family: 'Marcellus', serif;
+      font-size: 54px;
+      color: var(--text-dark);
+      margin-top: 15px;
+      margin-bottom: 15px;
+      line-height: 1.2;
+    }
+
+    .about-hero p {
+      font-size: 19px;
+      color: var(--text-light);
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    .about-page-container {
+      padding: 80px 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .about-hero h1 {
+        font-size: 38px;
+      }
+
+      .about-hero p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <p>10% Off Today - Use Code <strong>GOLDEN10</strong> at Checkout</p>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <i class="fa-solid fa-leaf"></i> GoldenRoot
+      </div>
+      <div class="nav-links-wrapper">
+        <ul class="nav-links">
+           <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" style="color: var(--primary-dark); font-weight: 700;">About Us</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="types.html">Turmeric Types</a></li>
+          <li><a href="dailylife.html">Daily Life</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="nav-icons">
+        <a href="types.html#live-market-section" class="market-nav-icon" title="Check Live Turmeric Market Rates">
+          <i class="fa-solid fa-chart-line"></i>
+          <span class="live-pulse-dot"></span>
+        </a>
+        <div class="cart-icon-wrapper" onclick="toggleCart()">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-badge" id="nav-cart-badge">0</span>
+        </div>
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Hero -->
+  <section class="about-hero">
+    <div class="badge"><i class="fa-solid fa-hands-holding-circle"></i> 100% Pure & Authentically Sourced</div>
+    <h1>About <span>GoldenRoot</span></h1>
+    <p>Bringing Nature's Golden Goodness to Every Home</p>
+  </section>
+
+  <!-- Main About Content (Interactive Tabs) -->
+  <div class="about-page-container">
+    <div class="about-us-container" style="box-shadow: none; border: none; padding: 0;">
+      <!-- Interactive Tabs Navigation -->
+      <div class="about-tabs" style="margin-bottom: 50px;">
+        <button class="about-tab-btn active" onclick="switchAboutTab('journey')">
+          <i class="fa-solid fa-leaf"></i> About Us
+        </button>
+        <button class="about-tab-btn" onclick="switchAboutTab('plants')">
+          <i class="fa-solid fa-tractor"></i> Farming & Process
+        </button>
+        <button class="about-tab-btn" onclick="switchAboutTab('milestones')">
+          <i class="fa-solid fa-trophy"></i> Our Milestones
+        </button>
+        <button class="about-tab-btn" onclick="switchAboutTab('leadership')">
+          <i class="fa-solid fa-user-tie"></i> Our Leadership
+        </button>
+      </div>
+
+      <!-- Tab Content Area -->
+      <div class="about-tab-content-wrapper">
+
+        <!-- Tab 1: About Us -->
+        <div id="about-journey" class="about-tab-content active">
+          <div class="about-grid">
+            <div class="about-text-column">
+              <h3>Bringing Nature's Golden Goodness to Every Home</h3>
+              <p>At Golden Milk Turmeric, we believe that quality begins at the source. Our turmeric is cultivated in
+                fertile farms, carefully harvested, hygienically processed, and packaged using food-grade standards. Our
+                mission is to provide pure turmeric products that support healthy lifestyles while maintaining
+                authenticity and natural goodness.</p>
+
+              <div class="why-choose-container">
+                <h4 class="why-choose-heading">Why Choose Us?</h4>
+                <ul class="about-list why-choose-grid">
+                  <li><i class="fa-solid fa-circle-check"></i> 100% Pure Turmeric</li>
+                  <li><i class="fa-solid fa-circle-check"></i> High Curcumin Content</li>
+                  <li><i class="fa-solid fa-circle-check"></i> No Artificial Colors or Preservatives</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Hygienically Processed</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Lab Tested Quality</li>
+                  <li><i class="fa-solid fa-circle-check"></i> Farm-to-Pack Freshness</li>
+                </ul>
+              </div>
+            </div>
+            <div class="about-image-column">
+              <div class="about-image-wrapper">
+                <img src="assets/turmeric_harvest.png" alt="Our Harvesting Journey">
+                <div class="about-image-badge"><i class="fa-solid fa-heart"></i> 100% Pure</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Our Farming & Manufacturing Process -->
+        <div id="about-plants" class="about-tab-content">
+          <div class="about-process-intro">
+            <h3>Our 11-Step Farm to Package Cycle</h3>
+            <p>From the rich soils of our organic farms to the final global delivery, trace each sequential phase of our
+              meticulous farming and cold-manufacturing process.</p>
+          </div>
+
+          <div class="process-sequence-grid">
+            <!-- Step 1 -->
+            <div class="sequence-card">
+              <div class="sequence-img-gallery">
+                <div class="gallery-scroll-container">
+                  <img src="assets/step1_land_prep.png" alt="Land preparation with power tiller">
+                  <img src="assets/step2_planting.png" alt="Preparing soil beds manually">
+                  <img src="assets/step3_growth.jpg" alt="Organically prepared soil bed with straw cover">
+                  <img src="assets/step4_harvesting.jpg" alt="Field weeding and soil check">
+                  <img src="assets/step3_growth_field.jpg" alt="Rich soil bed layout">
+                </div>
+                <span class="step-badge">Step 01</span>
+                <div class="gallery-scroll-hint"><i class="fa-solid fa-left-right"></i> Scroll photos</div>
+              </div>
+              <div class="sequence-content">
+                <h4>Land Preparation & Soil Management</h4>
+                <p>The journey of premium turmeric begins with fertile, well-drained soil. Fields are carefully prepared
+                  by ploughing and enriching the soil with organic manure to create ideal growing conditions.</p>
+                <div class="activities-list">
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Soil testing</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Organic manure application</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Field leveling</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Bed preparation</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="sequence-card">
+              <div class="sequence-img-gallery">
+                <div class="gallery-scroll-container">
+                  <img src="assets/step2_planting_rows.jpg"
+                    alt="Healthy turmeric sprouts growing in neat agricultural ridges">
+                  <img src="assets/step2_planting_farmer.jpg"
+                    alt="Farmer tending to lush green turmeric foliage in the field">
+                </div>
+                <span class="step-badge">Step 02</span>
+                <div class="gallery-scroll-hint"><i class="fa-solid fa-left-right"></i> Scroll photos</div>
+              </div>
+              <div class="sequence-content">
+                <h4>Seed Rhizome Selection & Planting</h4>
+                <p>Healthy and disease-free turmeric rhizomes are selected as planting material. These rhizomes are
+                  planted at the beginning of the monsoon season to ensure optimal growth.</p>
+                <div class="activities-list">
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Selection of quality
+                    rhizomes</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Disease inspection</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Proper spacing</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Timely plantation</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="sequence-card">
+              <div class="sequence-img-gallery">
+                <div class="gallery-scroll-container">
+                  <img src="assets/step3_growth_weeding.jpg"
+                    alt="Farmers working in rows of young turmeric crop for weeding and earthing up">
+                  <img src="assets/step3_growth_workers.jpg"
+                    alt="Workers tending to lush green turmeric foliage in the growing field">
+                </div>
+                <span class="step-badge">Step 03</span>
+                <div class="gallery-scroll-hint"><i class="fa-solid fa-left-right"></i> Scroll photos</div>
+              </div>
+              <div class="sequence-content">
+                <h4>Crop Growth & Field Care</h4>
+                <p>Throughout the growing season, the crop receives regular irrigation, nutrient management, and weed
+                  control to ensure healthy plant development.</p>
+                <div class="activities-list">
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Irrigation management</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Weed control</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Organic nutrition</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Crop monitoring</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="sequence-card">
+              <div class="sequence-img-gallery">
+                <div class="gallery-scroll-container">
+                  <img src="assets/step4_harvest_roots.jpg"
+                    alt="Freshly harvested rich turmeric rhizomes bundle held by hand">
+                  <img src="assets/step4_harvest_sorting.jpg"
+                    alt="Freshly harvested turmeric rhizomes spread across the processing area for sorting">
+                </div>
+                <span class="step-badge">Step 04</span>
+                <div class="gallery-scroll-hint"><i class="fa-solid fa-left-right"></i> Scroll photos</div>
+              </div>
+              <div class="sequence-content">
+                <h4>Harvesting Mature Turmeric</h4>
+                <p>After 7–9 months of cultivation, mature turmeric rhizomes are harvested carefully to preserve quality
+                  and maximize yield.</p>
+                <div class="activities-list">
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Manual harvesting</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Rhizome collection</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Sorting</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Transportation to processing
+                    unit</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="sequence-card">
+              <div class="sequence-img-gallery">
+                <div class="gallery-scroll-container">
+                  <img src="assets/step5_wash_spray.png"
+                    alt="Washing freshly harvested turmeric clumps with a water pressure hose">
+                  <img src="assets/step5_wash_industrial.png"
+                    alt="Industrial turmeric roots washing facility running pure clean water">
+                  <img src="assets/step5_process_diagram.png"
+                    alt="Process flow diagram from rhizomes washing to boiling and grinding">
+                </div>
+                <span class="step-badge">Step 05</span>
+                <div class="gallery-scroll-hint"><i class="fa-solid fa-left-right"></i> Scroll photos</div>
+              </div>
+              <div class="sequence-content">
+                <h4>Cleaning & Washing</h4>
+                <p>Freshly harvested turmeric is thoroughly washed to remove soil, stones, and other impurities.</p>
+                <div class="activities-list">
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Water washing</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Dirt removal</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Quality inspection</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Pre-processing cleaning</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 6 -->
+            <div class="sequence-card">
+              <div class="sequence-img-gallery">
+                <div class="gallery-scroll-container">
+                  <img src="assets/step6_boiling_pot.jpg"
+                    alt="Lifting fresh turmeric out of boiling curing pot over open fire hearth">
+                  <img src="assets/step6_curing_slide.png"
+                    alt="Educational overview detailing the curing process, timing and importance of temperature control">
+                </div>
+                <span class="step-badge">Step 06</span>
+                <div class="gallery-scroll-hint"><i class="fa-solid fa-left-right"></i> Scroll photos</div>
+              </div>
+              <div class="sequence-content">
+                <h4>Boiling / Curing Process</h4>
+                <p>The cleaned turmeric is boiled under controlled conditions. This curing process enhances color,
+                  aroma, and shelf life while reducing raw odor.</p>
+                <div class="activities-list">
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Controlled boiling</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Uniform curing</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Color development</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Quality control</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 7 -->
+            <div class="sequence-card">
+              <div class="sequence-img-gallery">
+                <div class="gallery-scroll-container">
+                  <img src="assets/step7_drying_rake.png"
+                    alt="Workers raking a massive bed of boiling-cured yellow turmeric fingers on the drying floor">
+                  <img src="assets/step7_drying_slices.jpg"
+                    alt="Orange sliced turmeric roots spread out on white sheets drying in natural sunlight">
+                </div>
+                <span class="step-badge">Step 07</span>
+                <div class="gallery-scroll-hint"><i class="fa-solid fa-left-right"></i> Scroll photos</div>
+              </div>
+              <div class="sequence-content">
+                <h4>Drying Process</h4>
+                <p>The cured turmeric is dried naturally under sunlight or through hygienic mechanical dryers until the
+                  desired moisture level is achieved.</p>
+                <div class="activities-list">
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Sun drying</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Moisture reduction</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Quality monitoring</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Safe handling</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 8 -->
+            <div class="sequence-card">
+              <div class="sequence-img-gallery">
+                <div class="gallery-scroll-container">
+                  <img src="assets/step8_polishing_flowchart.png"
+                    alt="Detailed flowchart explaining sifting, polishing, and solvent extraction pathways"
+                    style="object-fit: contain; background: #ffffff; min-width: 85%;">
+                  <img src="assets/turmeric_roots.png"
+                    alt="Clean and sorted organic turmeric rhizomes ready for final grading"
+                    style="object-fit: cover; min-width: 85%;">
+                </div>
+                <span class="step-badge">Step 08</span>
+                <div class="gallery-scroll-hint"><i class="fa-solid fa-left-right"></i> Scroll photos</div>
+              </div>
+              <div class="sequence-content">
+                <h4>Polishing & Grading</h4>
+                <p>Dried turmeric fingers are polished to improve appearance and graded according to size, color, and
+                  quality standards.</p>
+                <div class="activities-list">
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Surface polishing</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Size grading</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Quality segregation</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Final inspection</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 9 -->
+            <div class="sequence-card">
+              <div class="sequence-img-gallery">
+                <div class="gallery-scroll-container">
+                  <img src="assets/step9_grinding_milling.png"
+                    alt="Circular processing flow diagram detailing washing, peeling, cutting, blanching, blowing, drying, and pulverizing"
+                    style="object-fit: contain; background: #ffffff; min-width: 85%;">
+                  <img src="assets/turmeric_powder.png" alt="Finely ground organic golden turmeric powder heap"
+                    style="object-fit: cover; min-width: 85%;">
+                </div>
+                <span class="step-badge">Step 09</span>
+                <div class="gallery-scroll-hint"><i class="fa-solid fa-left-right"></i> Scroll photos</div>
+              </div>
+              <div class="sequence-content">
+                <h4>Grinding Into Fine Powder</h4>
+                <p>Selected turmeric fingers are finely ground using modern milling equipment to preserve natural color,
+                  aroma, and curcumin content.</p>
+                <div class="activities-list">
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Fine grinding</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Particle size control</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Hygiene maintenance</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Quality assurance</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 10 -->
+            <div class="sequence-card">
+              <div class="sequence-img-gallery">
+                <div class="gallery-scroll-container">
+                  <img src="assets/step10_test_petri.png"
+                    alt="Lab technician inspecting purity of organic turmeric powder in petri dishes using a dropper">
+                  <img src="assets/step10_test_milling.jpg"
+                    alt="Industrial quality auditor checking fresh ground turmeric batch from the milling line">
+                  <img src="assets/step10_test_spices.png"
+                    alt="Quality analyst measuring curcumin composition of different batch samples using pipette">
+                  <img src="assets/step10_test_spoon.jpg"
+                    alt="Completed premium golden turmeric powder with whole dried rhizomes on wooden board">
+                </div>
+                <span class="step-badge">Step 10</span>
+                <div class="gallery-scroll-hint"><i class="fa-solid fa-left-right"></i> Scroll photos</div>
+              </div>
+              <div class="sequence-content">
+                <h4>Quality Testing</h4>
+                <p>Every batch undergoes rigorous quality checks for purity, color, moisture, and safety before
+                  packaging.</p>
+                <div class="activities-list">
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Purity testing</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Moisture analysis</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Microbiological testing</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Batch approval</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 11 -->
+            <div class="sequence-card">
+              <div class="sequence-img-gallery">
+                <div class="gallery-scroll-container">
+                  <img src="assets/step11_packaging.png"
+                    alt="Kraft standing pouches of Golden Root premium organic turmeric powder"
+                    style="object-fit: contain; background: #fdfcf7; min-width: 85%;">
+                  <img src="assets/curcumin_capsules.jpg"
+                    alt="Cold-extracted high curcumin organic turmeric capsules packaged in jars"
+                    style="object-fit: cover; min-width: 85%;">
+                </div>
+                <span class="step-badge">Step 11</span>
+                <div class="gallery-scroll-hint"><i class="fa-solid fa-left-right"></i> Scroll photos</div>
+              </div>
+              <div class="sequence-content">
+                <h4>Packaging & Distribution</h4>
+                <p>The finished product is packed in food-grade packaging to maintain freshness and delivered to
+                  customers across domestic and international markets.</p>
+                <div class="activities-list">
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Food-grade packaging</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Batch coding</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Warehouse storage</span>
+                  <span class="activity-tag"><i class="fa-solid fa-circle-check"></i> Nationwide & export
+                    shipping</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Our Milestones -->
+        <div id="about-milestones" class="about-tab-content">
+          <div class="about-grid">
+            <div class="about-text-column">
+              <h3>Milestones of Purity</h3>
+              <p>We are incredibly proud of our commitment to transparency, the environment, and social impact. Over the
+                years, we have reached major milestones that validate our organic heritage:</p>
+
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-year">2018</div>
+                  <div class="timeline-text">
+                    <h4>The Seed is Sown</h4>
+                    <p>Founded GoldenRoot with our first organic harvest in Spice Valley.</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-year">2020</div>
+                  <div class="timeline-text">
+                    <h4>USDA Organic Certification</h4>
+                    <p>Our entire chain of supply and processing plant officially certified 100% Organic.</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-year">2023</div>
+                  <div class="timeline-text">
+                    <h4>10,000+ Wellness Families</h4>
+                    <p>Expanded our online shop and shipped premium turmeric to all states, maintaining 5-star customer
+                      ratings.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about-image-column">
+              <div class="about-image-wrapper">
+                <img src="assets/turmeric_bowl.png" alt="Our Accomplishments">
+                <div class="about-image-badge"><i class="fa-solid fa-star"></i> Top Rated Brand</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Our Leadership -->
+        <div id="about-leadership" class="about-tab-content">
+          <div class="about-grid">
+            <div class="about-text-column">
+              <h3>Message from our Managing Director</h3>
+              <p class="director-quote">"Purity is not a standard we achieve; it is a promise we live by every single
+                day."</p>
+              <p>At GoldenRoot, our vision extends far beyond producing premium organic turmeric. We are committed to
+                building an ecosystem that honors the hard work of our multi-generational farming families, preserves
+                the fertility of our sacred soil, and brings the purest healing powers of nature directly to your
+                family.</p>
+              <p>Every single batch of our high-curcumin turmeric is a testament to our uncompromising pursuit of
+                purity, quality, and organic integrity. Thank you for being a part of our journey towards a healthier,
+                more vibrant world.</p>
+              <div class="director-signature">
+                <h4>Kundan Patil</h4>
+                <span>Managing Director, GoldenRoot</span>
+              </div>
+            </div>
+            <div class="about-image-column">
+              <div class="about-image-wrapper director-img-wrapper">
+                <img src="assets/director_photo.jpg" alt="Kundan Patil - Managing Director">
+                <div class="about-image-badge"><i class="fa-solid fa-crown"></i> MD & Founder</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3><i class="fa-solid fa-leaf"></i> GoldenRoot</h3>
+        <p><strong>From Soil to Success.</strong><br>Empowering Farmers. Enabling Business. Delivering Wellness.</p>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="dailylife.html">Daily Life</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><i class="fa-solid fa-envelope"></i> patilkundan6522@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +91 9689212775</p>
+        <p><i class="fa-solid fa-location-dot"></i> Plot no 3 gaytri nagar station road Raver</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 GoldenRoot Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+  <div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button class="close-cart" onclick="toggleCart()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-items" id="cart-items-container">
+      <!-- Cart items injected via JS -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Subtotal</span>
+        <span id="cart-total-price">₹0.00</span>
+      </div>
+      <p class="taxes-notice">Taxes and shipping calculated at checkout</p>
+      <button class="btn btn-primary checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <script>
+    // Navigation Hamburger
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    });
+
+    // About Us Tab Switcher
+    function switchAboutTab(tabId) {
+      document.querySelectorAll('.about-tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      document.querySelectorAll('.about-tab-content').forEach(content => {
+        content.classList.remove('active');
+      });
+
+      const targetBtn = Array.from(document.querySelectorAll('.about-tab-btn')).find(btn => btn.getAttribute('onclick').includes(tabId));
+      if (targetBtn) targetBtn.classList.add('active');
+
+      const targetContent = document.getElementById(`about-${tabId}`);
+      if (targetContent) targetContent.classList.add('active');
+    }
+
+    // Cart Logic
+    let cart = JSON.parse(localStorage.getItem('goldenRootCart')) || [];
+
+    function saveCart() {
+      localStorage.setItem('goldenRootCart', JSON.stringify(cart));
+      renderCart();
+    }
+
+    function addToCart(id, name, price, img) {
+      const existing = cart.find(item => item.id === id);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push({ id, name, price, img, quantity: 1 });
+      }
+      saveCart();
+      const overlay = document.querySelector('.cart-overlay');
+      if (!overlay.classList.contains('active')) {
+        toggleCart();
+      }
+    }
+
+    function removeFromCart(id) {
+      cart = cart.filter(item => item.id !== id);
+      saveCart();
+    }
+
+    function updateQuantity(id, delta) {
+      const item = cart.find(item => item.id === id);
+      if (item) {
+        item.quantity += delta;
+        if (item.quantity <= 0) removeFromCart(id);
+        else saveCart();
+      }
+    }
+
+    function renderCart() {
+      const container = document.getElementById('cart-items-container');
+      const badgeContainer = document.getElementById('nav-cart-badge');
+      const totalPriceEl = document.getElementById('cart-total-price');
+
+      let totalItems = 0;
+      let totalPrice = 0;
+
+      container.innerHTML = '';
+
+      if (cart.length === 0) {
+        container.innerHTML = '<p class="empty-cart"><i class="fa-solid fa-basket-shopping"></i><br>Your cart is empty.</p>';
+      } else {
+        cart.forEach(item => {
+          totalItems += item.quantity;
+          totalPrice += item.price * item.quantity;
+
+          container.innerHTML += `
+            <div class="cart-item">
+              <img src="${item.img}" alt="${item.name}">
+              <div class="cart-item-details">
+                <h4>${item.name}</h4>
+                <div class="cart-item-price">₹${item.price.toFixed(2)}</div>
+                <div class="cart-item-quantity">
+                  <button onclick="updateQuantity(${item.id}, -1)">-</button>
+                  <span>${item.quantity}</span>
+                  <button onclick="updateQuantity(${item.id}, 1)">+</button>
+                </div>
+              </div>
+              <button class="remove-item" onclick="removeFromCart(${item.id})"><i class="fa-solid fa-trash"></i></button>
+            </div>
+          `;
+        });
+      }
+
+      badgeContainer.textContent = totalItems;
+      totalPriceEl.textContent = '₹' + totalPrice.toFixed(2);
+    }
+
+    function toggleCart() {
+      document.getElementById('cart-sidebar').classList.toggle('active');
+      document.getElementById('cart-overlay').classList.toggle('active');
+    }
+
+    function checkout() {
+      if (cart.length === 0) return alert('Your cart is empty');
+      alert('Proceeding to checkout with ' + cart.length + ' items!\nTotal: ₹' + document.getElementById('cart-total-price').innerText.replace('₹', ''));
+    }
+
+    // Initial render
+    renderCart();
+
+    // Change nav style on scroll
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
+  <script src="cursor.js"></script>
+</body>
+
+</html>

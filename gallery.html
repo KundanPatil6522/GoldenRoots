@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Root | Premium Organic Turmeric</title>
+  <link rel="stylesheet" href="style.css?v=4">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <p>10% Off Today - Use Code <strong>GOLDEN10</strong> at Checkout</p>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <i class="fa-solid fa-leaf"></i> GoldenRoot
+      </div>
+      <div class="nav-links-wrapper">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="types.html">Turmeric Types</a></li>
+          <li><a href="dailylife.html">Daily Life</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="nav-icons">
+        <a href="types.html#live-market-section" class="market-nav-icon" title="Check Live Turmeric Market Rates">
+          <i class="fa-solid fa-chart-line"></i>
+          <span class="live-pulse-dot"></span>
+        </a>
+        <div class="cart-icon-wrapper" onclick="toggleCart()">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-badge" id="nav-cart-badge">0</span>
+        </div>
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery">
+    <div class="section-title">
+      <h2>Pure & <span>Natural Gallery</span></h2>
+      <p>From organic soil to final golden powder, explore our farm harvesting, traditional curing, and production videos and photos.</p>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div class="gallery-filter-container">
+      <button class="gallery-filter-btn active" onclick="filterGallery('all', this)">
+        <i class="fa-solid fa-border-all"></i> All Media <span class="gallery-count-badge">11</span>
+      </button>
+      <button class="gallery-filter-btn" onclick="filterGallery('videos', this)">
+        <i class="fa-solid fa-circle-play"></i> Farm & Factory Videos <span class="gallery-count-badge">5</span>
+      </button>
+      <button class="gallery-filter-btn" onclick="filterGallery('photos', this)">
+        <i class="fa-solid fa-images"></i> Product & Field Photos <span class="gallery-count-badge">6</span>
+      </button>
+    </div>
+
+    <!-- Video Subsection -->
+    <div id="video-subsection" class="gallery-category-section">
+      <div class="gallery-subsection-header">
+        <div class="gallery-subsection-title">
+          <i class="fa-solid fa-film"></i> Farm & Process Video Showcase
+        </div>
+        <div class="gallery-subsection-subtitle">Watch our real farm harvesting and hygienic processing in HD</div>
+      </div>
+
+      <div class="video-gallery-grid">
+        <!-- Video 1 -->
+        <div class="video-card">
+          <div class="video-wrapper">
+            <span class="video-badge"><i class="fa-solid fa-wheat-awn"></i> Farm Harvest</span>
+            <video controls preload="metadata" playsinline muted poster="assets/turmeric_harvest.png">
+              <source src="assets/WhatsApp Video 2026-07-31 at 2.48.31 PM.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="video-card-body">
+            <h3 class="video-card-title">Fresh Turmeric Root Harvesting</h3>
+            <p class="video-card-desc">Watch our dedicated local farmers carefully unearthing fresh, organic golden turmeric rhizomes directly from rich soil.</p>
+            <div class="video-card-footer">
+              <span><i class="fa-solid fa-clock"></i> HD Video</span>
+              <button class="btn-open-lightbox" onclick="openLightbox('assets/WhatsApp Video 2026-07-31 at 2.48.31 PM.mp4', 'video', 'Fresh Turmeric Root Harvesting', 'Watch our dedicated local farmers carefully unearthing fresh, organic golden turmeric rhizomes directly from rich soil.')">
+                <i class="fa-solid fa-expand"></i> Fullscreen
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card">
+          <div class="video-wrapper">
+            <span class="video-badge"><i class="fa-solid fa-fire-burner"></i> Curing Process</span>
+            <video controls preload="metadata" playsinline muted poster="assets/step6_boiling_pot.jpg">
+              <source src="assets/WhatsApp Video 2026-07-31 at 2.49.00 PM.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="video-card-body">
+            <h3 class="video-card-title">Hygienic Washing & Curing</h3>
+            <p class="video-card-desc">Traditional boiling and steam curing process in copper vessels to lock in natural curcumin and rich saffron aroma.</p>
+            <div class="video-card-footer">
+              <span><i class="fa-solid fa-clock"></i> HD Video</span>
+              <button class="btn-open-lightbox" onclick="openLightbox('assets/WhatsApp Video 2026-07-31 at 2.49.00 PM.mp4', 'video', 'Hygienic Washing & Curing', 'Traditional boiling and steam curing process in copper vessels to lock in natural curcumin and rich saffron aroma.')">
+                <i class="fa-solid fa-expand"></i> Fullscreen
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-card">
+          <div class="video-wrapper">
+            <span class="video-badge"><i class="fa-solid fa-sun"></i> Sun Drying</span>
+            <video controls preload="metadata" playsinline muted poster="assets/step7_drying_rake.png">
+              <source src="assets/WhatsApp Video 2026-07-31 at 2.49.00 PM (1).mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="video-card-body">
+            <h3 class="video-card-title">Natural Sun Drying & Raking</h3>
+            <p class="video-card-desc">Cured turmeric slices naturally dried under bright sunlight on elevated hygienic tables to achieve ideal 10% moisture levels.</p>
+            <div class="video-card-footer">
+              <span><i class="fa-solid fa-clock"></i> HD Video</span>
+              <button class="btn-open-lightbox" onclick="openLightbox('assets/WhatsApp Video 2026-07-31 at 2.49.00 PM (1).mp4', 'video', 'Natural Sun Drying & Raking', 'Cured turmeric slices naturally dried under bright sunlight on elevated hygienic tables to achieve ideal 10% moisture levels.')">
+                <i class="fa-solid fa-expand"></i> Fullscreen
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="video-card">
+          <div class="video-wrapper">
+            <span class="video-badge"><i class="fa-solid fa-gear"></i> Fine Milling</span>
+            <video controls preload="metadata" playsinline muted poster="assets/step9_grinding_milling.png">
+              <source src="assets/WhatsApp Video 2026-07-31 at 2.49.00 PM (2).mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="video-card-body">
+            <h3 class="video-card-title">Cold-Grinding & Fine Powder Processing</h3>
+            <p class="video-card-desc">State-of-the-art low-temperature stainless steel milling preserving delicate essential oils, vibrant color, and nutrients.</p>
+            <div class="video-card-footer">
+              <span><i class="fa-solid fa-clock"></i> HD Video</span>
+              <button class="btn-open-lightbox" onclick="openLightbox('assets/WhatsApp Video 2026-07-31 at 2.49.00 PM (2).mp4', 'video', 'Cold-Grinding & Fine Powder Processing', 'State-of-the-art low-temperature stainless steel milling preserving delicate essential oils, vibrant color, and nutrients.')">
+                <i class="fa-solid fa-expand"></i> Fullscreen
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 5 -->
+        <div class="video-card">
+          <div class="video-wrapper">
+            <span class="video-badge"><i class="fa-solid fa-box-open"></i> Quality & Packing</span>
+            <video controls preload="metadata" playsinline muted poster="assets/step11_packaging.png">
+              <source src="assets/WhatsApp Video 2026-07-31 at 2.49.00 PM (3).mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="video-card-body">
+            <h3 class="video-card-title">Quality Testing & Sealed Packaging</h3>
+            <p class="video-card-desc">Strict batch sample quality testing followed by eco-friendly hermetic pouch sealing ready for distribution.</p>
+            <div class="video-card-footer">
+              <span><i class="fa-solid fa-clock"></i> HD Video</span>
+              <button class="btn-open-lightbox" onclick="openLightbox('assets/WhatsApp Video 2026-07-31 at 2.49.00 PM (3).mp4', 'video', 'Quality Testing & Sealed Packaging', 'Strict batch sample quality testing followed by eco-friendly hermetic pouch sealing ready for distribution.')">
+                <i class="fa-solid fa-expand"></i> Fullscreen
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo Subsection -->
+    <div id="photo-subsection" class="gallery-category-section">
+      <div class="gallery-subsection-header">
+        <div class="gallery-subsection-title">
+          <i class="fa-solid fa-camera"></i> Organic Turmeric Photo Gallery
+        </div>
+        <div class="gallery-subsection-subtitle">High-resolution glimpses of our organic produce and wellness range</div>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item-card" onclick="openLightbox('assets/turmeric_harvest.png', 'image', 'Turmeric Farm Harvest', 'Fresh organic turmeric harvested directly from sustainable soil.')">
+          <img src="assets/turmeric_harvest.png" alt="Turmeric Harvest">
+          <div class="gallery-item-overlay">
+            <h4>Turmeric Farm Harvest</h4>
+            <span><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</span>
+          </div>
+        </div>
+
+        <div class="gallery-item-card" onclick="openLightbox('assets/turmeric_powder.png', 'image', 'Ultra-Fine Turmeric Powder', 'Pure curcumin-rich golden powder processed under strict hygienic standards.')">
+          <img src="assets/turmeric_powder.png" alt="Turmeric Fine Powder">
+          <div class="gallery-item-overlay">
+            <h4>Ultra-Fine Turmeric Powder</h4>
+            <span><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</span>
+          </div>
+        </div>
+
+        <div class="gallery-item-card" onclick="openLightbox('assets/turmeric_bowl.png', 'image', 'Curcumin Golden Bowl', 'Authentic aroma, vibrant color, and 5%+ curcumin content.')">
+          <img src="assets/turmeric_bowl.png" alt="Turmeric Bowl">
+          <div class="gallery-item-overlay">
+            <h4>Curcumin Golden Bowl</h4>
+            <span><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</span>
+          </div>
+        </div>
+
+        <div class="gallery-item-card" onclick="openLightbox('assets/turmeric_roots.png', 'image', 'Raw Organic Turmeric Rhizomes', 'Sun-cured premium rhizomes ready for export and milling.')">
+          <img src="assets/turmeric_roots.png" alt="Turmeric Roots">
+          <div class="gallery-item-overlay">
+            <h4>Raw Organic Rhizomes</h4>
+            <span><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</span>
+          </div>
+        </div>
+
+        <div class="gallery-item-card" onclick="openLightbox('assets/turmeric_tea.png', 'image', 'Golden Turmeric Wellness Tea', 'Refreshing immunity-boosting golden tea brewed from pure turmeric.')">
+          <img src="assets/turmeric_tea.png" alt="Golden Turmeric Tea">
+          <div class="gallery-item-overlay">
+            <h4>Golden Turmeric Tea</h4>
+            <span><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</span>
+          </div>
+        </div>
+
+        <div class="gallery-item-card" onclick="openLightbox('assets/turmeric_benefits.jpg', 'image', 'Health & Ayurvedic Benefits', 'Naturally anti-inflammatory, antioxidant-rich wellness solution.')">
+          <img src="assets/turmeric_benefits.jpg" alt="Turmeric Health Benefits">
+          <div class="gallery-item-overlay">
+            <h4>Ayurvedic Health Benefits</h4>
+            <span><i class="fa-solid fa-magnifying-glass-plus"></i> Click to enlarge</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="gallery-lightbox-modal" id="gallery-lightbox">
+    <div class="lightbox-content-container">
+      <button class="lightbox-close-btn" onclick="closeLightbox()"><i class="fa-solid fa-xmark"></i></button>
+      <div class="lightbox-media-wrapper" id="lightbox-media-container">
+        <!-- Dynamic Media -->
+      </div>
+      <div class="lightbox-caption-bar">
+        <div class="lightbox-caption-text">
+          <h4 id="lightbox-title">Media Title</h4>
+          <p id="lightbox-desc">Media Description</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3><i class="fa-solid fa-leaf"></i> GoldenRoot</h3>
+        <p><strong>From Soil to Success.</strong><br>Empowering Farmers. Enabling Business. Delivering Wellness.</p>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#products">Shop</a></li>
+          <li><a href="#">Wholesale Inquiries</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><i class="fa-solid fa-envelope"></i> patilkundan6522@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +91 9689212775</p>
+        <p><i class="fa-solid fa-location-dot"></i> Plot no 3 gaytri nagar station road Raver</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 GoldenRoot Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+  <div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button class="close-cart" onclick="toggleCart()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-items" id="cart-items-container">
+      <!-- Cart items injected via JS -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Subtotal</span>
+        <span id="cart-total-price">₹0.00</span>
+      </div>
+      <p class="taxes-notice">Taxes and shipping calculated at checkout</p>
+      <button class="btn btn-primary checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <script>
+    // Navigation Hamburger
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+      });
+    });
+
+    // FAQ Accordion
+    const faqs = document.querySelectorAll('.faq-question');
+    faqs.forEach(faq => {
+      faq.addEventListener('click', () => {
+        faq.classList.toggle('active');
+        const answer = faq.nextElementSibling;
+        if (faq.classList.contains('active')) {
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        } else {
+          answer.style.maxHeight = '0';
+        }
+      });
+    });
+
+    // Cart Logic
+    let cart = JSON.parse(localStorage.getItem('goldenRootCart')) || [];
+
+    function saveCart() {
+      localStorage.setItem('goldenRootCart', JSON.stringify(cart));
+      renderCart();
+    }
+
+    function addToCart(id, name, price, img) {
+      const existing = cart.find(item => item.id === id);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push({ id, name, price, img, quantity: 1 });
+      }
+      saveCart();
+      const overlay = document.querySelector('.cart-overlay');
+      if (!overlay.classList.contains('active')) {
+        toggleCart(); // Open cart to show user
+      }
+    }
+
+    function removeFromCart(id) {
+      cart = cart.filter(item => item.id !== id);
+      saveCart();
+    }
+
+    function updateQuantity(id, delta) {
+      const item = cart.find(item => item.id === id);
+      if (item) {
+        item.quantity += delta;
+        if (item.quantity <= 0) removeFromCart(id);
+        else saveCart();
+      }
+    }
+
+    function renderCart() {
+      const container = document.getElementById('cart-items-container');
+      const badgeContainer = document.getElementById('nav-cart-badge');
+      const totalPriceEl = document.getElementById('cart-total-price');
+
+      let totalItems = 0;
+      let totalPrice = 0;
+
+      container.innerHTML = '';
+
+      if (cart.length === 0) {
+        container.innerHTML = '<p class="empty-cart"><i class="fa-solid fa-basket-shopping"></i><br>Your cart is empty.</p>';
+      } else {
+        cart.forEach(item => {
+          totalItems += item.quantity;
+          totalPrice += item.price * item.quantity;
+
+          container.innerHTML += `
+            <div class="cart-item">
+              <img src="${item.img}" alt="${item.name}">
+              <div class="cart-item-details">
+                <h4>${item.name}</h4>
+                <div class="cart-item-price">₹${item.price.toFixed(2)}</div>
+                <div class="cart-item-quantity">
+                  <button onclick="updateQuantity(${item.id}, -1)">-</button>
+                  <span>${item.quantity}</span>
+                  <button onclick="updateQuantity(${item.id}, 1)">+</button>
+                </div>
+              </div>
+              <button class="remove-item" onclick="removeFromCart(${item.id})"><i class="fa-solid fa-trash"></i></button>
+            </div>
+          `;
+        });
+      }
+
+      badgeContainer.textContent = totalItems;
+      totalPriceEl.textContent = '₹' + totalPrice.toFixed(2);
+    }
+
+    function toggleCart() {
+      document.getElementById('cart-sidebar').classList.toggle('active');
+      document.getElementById('cart-overlay').classList.toggle('active');
+    }
+
+    function checkout() {
+      if (cart.length === 0) return alert('Your cart is empty');
+      alert('Proceeding to checkout with ' + cart.length + ' items!\nTotal: ₹' + document.getElementById('cart-total-price').innerText.replace('₹', ''));
+    }
+
+    // Initial render
+    renderCart();
+
+    // Gallery Filter Tabs Logic
+    function filterGallery(category, btnElement) {
+      document.querySelectorAll('.gallery-filter-btn').forEach(btn => btn.classList.remove('active'));
+      btnElement.classList.add('active');
+
+      const videoSec = document.getElementById('video-subsection');
+      const photoSec = document.getElementById('photo-subsection');
+
+      if (category === 'all') {
+        videoSec.style.display = 'block';
+        photoSec.style.display = 'block';
+      } else if (category === 'videos') {
+        videoSec.style.display = 'block';
+        photoSec.style.display = 'none';
+      } else if (category === 'photos') {
+        videoSec.style.display = 'none';
+        photoSec.style.display = 'block';
+      }
+    }
+
+    // Gallery Lightbox Modal Logic
+    function openLightbox(mediaSrc, mediaType, title, description) {
+      const modal = document.getElementById('gallery-lightbox');
+      const container = document.getElementById('lightbox-media-container');
+      const titleEl = document.getElementById('lightbox-title');
+      const descEl = document.getElementById('lightbox-desc');
+
+      titleEl.textContent = title;
+      descEl.textContent = description;
+
+      if (mediaType === 'video') {
+        container.innerHTML = `<video src="${mediaSrc}" controls autoplay style="width:100%; height:100%; max-height:70vh;"></video>`;
+      } else {
+        container.innerHTML = `<img src="${mediaSrc}" alt="${title}" style="max-width:100%; max-height:70vh; object-fit:contain;">`;
+      }
+
+      modal.classList.add('active');
+    }
+
+    function closeLightbox() {
+      const modal = document.getElementById('gallery-lightbox');
+      const container = document.getElementById('lightbox-media-container');
+      modal.classList.remove('active');
+      container.innerHTML = '';
+    }
+
+    // Close Lightbox listener
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+    const lightboxModal = document.getElementById('gallery-lightbox');
+    if (lightboxModal) {
+      lightboxModal.addEventListener('click', (e) => {
+        if (e.target.id === 'gallery-lightbox') closeLightbox();
+      });
+    }
+
+    // Change nav style on scroll
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
+  <script src="cursor.js"></script>
+</body>
+
+</html>

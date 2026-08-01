@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Root | Turmeric Varieties & Uses</title>
+  <meta name="description"
+    content="Explore the beautiful varieties of pure, organic Indian turmeric. From high-curcumin Lakadong to gourmet Alleppey, discover the perfect type for wellness, cooking, and skincare.">
+  <meta name="keywords"
+    content="Lakadong Turmeric, Alleppey Turmeric, Madras Turmeric, Kasturi Turmeric, Curcumin content, Turmeric uses, Ayurvedic skincare, organic spices">
+  <link rel="stylesheet" href="style.css?v=4">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <p>10% Off Today - Use Code <strong>GOLDEN10</strong> at Checkout</p>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <i class="fa-solid fa-leaf"></i> GoldenRoot
+      </div>
+      <div class="nav-links-wrapper">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="types.html" class="active">Turmeric Types</a></li>
+          <li><a href="dailylife.html">Daily Life</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="nav-icons">
+        <a href="#live-market-section" class="market-nav-icon" title="Check Live Turmeric Market Rates">
+          <i class="fa-solid fa-chart-line"></i>
+          <span class="live-pulse-dot"></span>
+        </a>
+        <div class="cart-icon-wrapper" onclick="toggleCart()">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-badge" id="nav-cart-badge">0</span>
+        </div>
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Title & Header Showcase -->
+  <header style="padding: 160px 5% 50px; text-align: center; background: linear-gradient(180deg, var(--white), var(--bg-color));">
+    <div class="section-title" style="margin-bottom: 30px;">
+      <h2>Turmeric <span>Varieties & Uses</span></h2>
+      <p>Not all turmeric is created equal. Different soils, elevations, and farming climates yield distinct properties. Discover the unique therapeutic, culinary, and beauty treasures of the golden root.</p>
+    </div>
+  </header>
+
+  <!-- Turmeric Varieties & Uses Section -->
+  <section class="turmeric-varieties" style="padding-top: 0;">
+    <div class="varieties-grid">
+      <!-- Variety 1: Lakadong -->
+      <div class="variety-card active-variety">
+        <div class="variety-icon-wrapper">
+          <i class="fa-solid fa-crown"></i>
+        </div>
+        <div class="variety-badge">Therapeutic / Wellness</div>
+        <h3>Lakadong Turmeric</h3>
+        <span class="variety-meta"><i class="fa-solid fa-flask-vial"></i> <strong>7-12%</strong> Curcumin (High Curcumin Content)</span>
+        <span class="variety-origin"><i class="fa-solid fa-location-dot"></i> Meghalaya, India</span>
+        <span class="variety-meta"><i class="fa-solid fa-star"></i> <strong>Active Index Score: 6</strong> (Supreme Grade)</span>
+        <p class="variety-desc"><strong>Why It's Special:</strong> Known as one of the world's richest natural sources of curcumin.</p>
+        <div class="variety-uses-box">
+          <h5>Best For:</h5>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i> Wellness & Supplements</li>
+            <li><i class="fa-solid fa-circle-check"></i> Golden Milk</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Variety 2: Salem -->
+      <div class="variety-card">
+        <div class="variety-icon-wrapper">
+          <i class="fa-solid fa-mortar-pestle"></i>
+        </div>
+        <div class="variety-badge">Gourmet & Commercial</div>
+        <h3>Salem Turmeric</h3>
+        <span class="variety-meta"><i class="fa-solid fa-flask-vial"></i> <strong>3.0% - 4.5%</strong> Curcumin</span>
+        <span class="variety-origin"><i class="fa-solid fa-location-dot"></i> Tamil Nadu, India</span>
+        <p class="variety-desc"><strong>Why It's Special:</strong> Deep color and strong aroma.</p>
+        <div class="variety-uses-box">
+          <h5>Best For:</h5>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i> Cooking</li>
+            <li><i class="fa-solid fa-circle-check"></i> Spice Manufacturing</li>
+            <li><i class="fa-solid fa-circle-check"></i> Export</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Variety 3: Erode -->
+      <div class="variety-card">
+        <div class="variety-icon-wrapper">
+          <i class="fa-solid fa-pepper-hot"></i>
+        </div>
+        <div class="variety-badge">Everyday & Culinary</div>
+        <h3>Erode Turmeric</h3>
+        <span class="variety-meta"><i class="fa-solid fa-flask-vial"></i> <strong>2.5% - 4.0%</strong> Curcumin</span>
+        <span class="variety-origin"><i class="fa-solid fa-location-dot"></i> Tamil Nadu, India</span>
+        <p class="variety-desc"><strong>Why It's Special:</strong> Famous globally for quality and vibrant yellow color.</p>
+        <div class="variety-uses-box">
+          <h5>Best For:</h5>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i> Household Cooking</li>
+            <li><i class="fa-solid fa-circle-check"></i> Food Industry</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Variety 4: Rajapuri -->
+      <div class="variety-card">
+        <div class="variety-icon-wrapper">
+          <i class="fa-solid fa-leaf"></i>
+        </div>
+        <div class="variety-badge">Bold & Premium</div>
+        <h3>Rajapuri Turmeric</h3>
+        <span class="variety-meta"><i class="fa-solid fa-flask-vial"></i> <strong>3.5% - 4.5%</strong> Curcumin</span>
+        <span class="variety-origin"><i class="fa-solid fa-location-dot"></i> Maharashtra, India</span>
+        <p class="variety-desc"><strong>Why It's Special:</strong> Large rhizomes and excellent yield.</p>
+        <div class="variety-uses-box">
+          <h5>Best For:</h5>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i> Turmeric Powder</li>
+            <li><i class="fa-solid fa-circle-check"></i> Food Processing</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Variety 5: Alleppey Finger -->
+      <div class="variety-card">
+        <div class="variety-icon-wrapper">
+          <i class="fa-solid fa-mortar-pestle"></i>
+        </div>
+        <div class="variety-badge">Gourmet & Export</div>
+        <h3>Alleppey Finger Turmeric</h3>
+        <span class="variety-meta"><i class="fa-solid fa-flask-vial"></i> <strong>5.0% - 6.0%</strong> Curcumin</span>
+        <span class="variety-origin"><i class="fa-solid fa-location-dot"></i> Kerala, India</span>
+        <p class="variety-desc"><strong>Why It's Special:</strong> Bright orange color and high demand in international markets.</p>
+        <div class="variety-uses-box">
+          <h5>Best For:</h5>
+          <ul>
+            <li><i class="fa-solid fa-circle-check"></i> Export</li>
+            <li><i class="fa-solid fa-circle-check"></i> Premium Powder</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Comparison Table Section -->
+  <section class="comparison-table-section" style="padding: 60px 5% 100px; max-width: 1200px; margin: 0 auto;">
+    <div class="section-title" style="margin-bottom: 50px;">
+      <h2>Side-by-Side <span>Comparison</span></h2>
+      <p>Here is a detailed comparison of our golden root varieties to help you make an informed decision.</p>
+    </div>
+    <div style="overflow-x: auto; background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid rgba(242, 159, 5, 0.08);">
+      <table style="width: 100%; border-collapse: collapse; text-align: left; font-family: 'Poppins', sans-serif; font-size: 15px; color: var(--text-main); min-width: 800px;">
+        <thead>
+          <tr style="background: linear-gradient(90deg, var(--primary), var(--primary-dark)); color: var(--white);">
+            <th style="padding: 20px 24px; font-weight: 700;">Variety</th>
+            <th style="padding: 20px 24px; font-weight: 700;">Curcumin Content</th>
+            <th style="padding: 20px 24px; font-weight: 700;">Primary Application</th>
+            <th style="padding: 20px 24px; font-weight: 700;">Aroma / Flavor Profile</th>
+            <th style="padding: 20px 24px; font-weight: 700;">Stains Skin?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid rgba(0,0,0,0.06); transition: background 0.3s;">
+            <td style="padding: 20px 24px; font-weight: 700; color: var(--primary-dark);">Lakadong</td>
+            <td style="padding: 20px 24px;">7.5% - 12.0% (Therapeutic)</td>
+            <td style="padding: 20px 24px;">Immunity lattes, recovery shots, dietary supplements</td>
+            <td style="padding: 20px 24px;">Intensely aromatic, warm, deeply earthy, slightly bitter</td>
+            <td style="padding: 20px 24px;">Yes (Strong)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(0,0,0,0.06); transition: background 0.3s; background: rgba(242, 159, 5, 0.02);">
+            <td style="padding: 20px 24px; font-weight: 700; color: var(--primary-dark);">Salem</td>
+            <td style="padding: 20px 24px;">3.0% - 4.5% (Commercial)</td>
+            <td style="padding: 20px 24px;">Cooking spice, manufacturing blends, global exports</td>
+            <td style="padding: 20px 24px;">Extremely deep color, pungent & strong earthy aroma</td>
+            <td style="padding: 20px 24px;">Yes (Moderate)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(0,0,0,0.06); transition: background 0.3s;">
+            <td style="padding: 20px 24px; font-weight: 700; color: var(--primary-dark);">Erode</td>
+            <td style="padding: 20px 24px;">2.5% - 4.0% (Culinary)</td>
+            <td style="padding: 20px 24px;">Daily cooking seasoning, organic food industrial products</td>
+            <td style="padding: 20px 24px;">Deeply warm, vibrant yellow hue, premium spice standard</td>
+            <td style="padding: 20px 24px;">Yes (Moderate)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(0,0,0,0.06); transition: background 0.3s; background: rgba(242, 159, 5, 0.02);">
+            <td style="padding: 20px 24px; font-weight: 700; color: var(--primary-dark);">Rajapuri</td>
+            <td style="padding: 20px 24px;">3.5% - 4.5% (Bold)</td>
+            <td style="padding: 20px 24px;">Spice processing, turmeric powder formulations</td>
+            <td style="padding: 20px 24px;">Vibrant color, deep earthy taste, bold spice profile</td>
+            <td style="padding: 20px 24px;">Yes (Moderate)</td>
+          </tr>
+          <tr style="transition: background 0.3s;">
+            <td style="padding: 20px 24px; font-weight: 700; color: var(--primary-dark);">Alleppey Finger</td>
+            <td style="padding: 20px 24px;">5.0% - 6.0% (Gourmet)</td>
+            <td style="padding: 20px 24px;">International exports, signature premium powders</td>
+            <td style="padding: 20px 24px;">Bright orange color, high demand, sweet-woody aroma</td>
+            <td style="padding: 20px 24px;">Yes (Moderate)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Live India Turmeric Market Rates Dashboard -->
+  <section class="live-market-section" style="padding: 0 5% 100px; max-width: 1200px; margin: 0 auto;">
+    <div class="market-card">
+      <div class="market-header">
+        <div class="market-header-title">
+          <div class="live-indicator-wrapper">
+            <span class="live-dot"></span>
+            <span class="live-text">LIVE MANDI FEED</span>
+          </div>
+          <h2>India Turmeric Market Rates</h2>
+          <p>Real-time wholesale market rates (mandi bhav) of premium turmeric across key trading centers in India.</p>
+        </div>
+        <div class="market-meta">
+          <span class="market-unit-badge"><i class="fa-solid fa-weight-hanging"></i> Price per Quintal (100 Kg)</span>
+          <span class="market-time-badge"><i class="fa-solid fa-clock"></i> Last Updated: <strong id="live-time-stamp">June 2, 2026, 6:10 PM IST</strong></span>
+        </div>
+      </div>
+      
+      <div class="market-grid">
+        <!-- Market 1: Erode -->
+        <div class="market-item-card">
+          <div class="market-item-header">
+            <h4>Erode Market</h4>
+            <span class="market-state">Tamil Nadu</span>
+          </div>
+          <div class="market-price-range">
+            <span class="price-val" id="price-erode">₹14,800 - ₹16,500</span>
+          </div>
+          <div class="market-trend trend-up">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            <span id="trend-val-erode">+1.5%</span> (Today)
+          </div>
+        </div>
+
+        <!-- Market 2: Sangli -->
+        <div class="market-item-card">
+          <div class="market-item-header">
+            <h4>Sangli Market</h4>
+            <span class="market-state">Maharashtra</span>
+          </div>
+          <div class="market-price-range">
+            <span class="price-val" id="price-sangli">₹15,500 - ₹17,800</span>
+          </div>
+          <div class="market-trend trend-up">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            <span id="trend-val-sangli">+0.8%</span> (Today)
+          </div>
+        </div>
+
+        <!-- Market 3: Nizamabad -->
+        <div class="market-item-card">
+          <div class="market-item-header">
+            <h4>Nizamabad Market</h4>
+            <span class="market-state">Telangana</span>
+          </div>
+          <div class="market-price-range">
+            <span class="price-val" id="price-nizamabad">₹13,900 - ₹15,200</span>
+          </div>
+          <div class="market-trend trend-up">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            <span id="trend-val-nizamabad">+2.1%</span> (Today)
+          </div>
+        </div>
+
+        <!-- Market 4: Raver Market -->
+        <div class="market-item-card highlighted-market">
+          <div class="market-item-header">
+            <h4>Raver Market</h4>
+            <span class="market-state">Maharashtra</span>
+          </div>
+          <div class="market-price-range">
+            <span class="price-val" id="price-raver">₹14,200 - ₹15,900</span>
+          </div>
+          <div class="market-trend trend-up">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            <span id="trend-val-raver">+1.4%</span> (Today)
+          </div>
+          <div class="market-hubs-badge"><i class="fa-solid fa-map-pin"></i> Raver Registered Hub</div>
+        </div>
+
+        <!-- Market 5: Basmat -->
+        <div class="market-item-card">
+          <div class="market-item-header">
+            <h4>Basmat Market</h4>
+            <span class="market-state">Maharashtra</span>
+          </div>
+          <div class="market-price-range">
+            <span class="price-val" id="price-basmat">₹14,500 - ₹16,100</span>
+          </div>
+          <div class="market-trend trend-up">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            <span id="trend-val-basmat">+1.2%</span> (Today)
+          </div>
+        </div>
+      </div>
+      
+      <div class="market-disclaimer">
+        <p><i class="fa-solid fa-circle-info"></i> Rates fluctuate based on daily supply, demand, moisture control, and curcumin content analysis at regional Mandi warehouses. Prices updated daily in collaboration with national agricultural portals.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Market Feed JavaScript -->
+  <script>
+    function updateMarketTimestamp() {
+      const timeEl = document.getElementById('live-time-stamp');
+      if (!timeEl) return;
+      const now = new Date();
+      const options = { 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric', 
+        hour: '2-digit', 
+        minute: '2-digit',
+        hour12: true
+      };
+      timeEl.innerText = now.toLocaleString('en-US', options) + ' IST';
+    }
+    
+    // Initial run
+    updateMarketTimestamp();
+
+    // Simulated minor market rate fluctuations to show active updates
+    setInterval(() => {
+      const markets = [
+        { id: 'price-erode', baseMin: 14800, baseMax: 16500 },
+        { id: 'price-sangli', baseMin: 15500, baseMax: 17800 },
+        { id: 'price-nizamabad', baseMin: 13900, baseMax: 15200 },
+        { id: 'price-raver', baseMin: 14200, baseMax: 15900 },
+        { id: 'price-basmat', baseMin: 14500, baseMax: 16100 }
+      ];
+      
+      const market = markets[Math.floor(Math.random() * markets.length)];
+      const el = document.getElementById(market.id);
+      if (!el) return;
+      
+      const randVarianceMin = Math.floor(Math.random() * 80) - 40; 
+      const randVarianceMax = Math.floor(Math.random() * 80) - 40;
+      
+      const newMin = market.baseMin + randVarianceMin;
+      const newMax = market.baseMax + randVarianceMax;
+      
+      el.innerText = `₹${newMin.toLocaleString('en-IN')} - ₹${newMax.toLocaleString('en-IN')}`;
+      
+      const parentCard = el.closest('.market-item-card');
+      if (parentCard) {
+        const isUp = (randVarianceMin + randVarianceMax) >= 0;
+        parentCard.style.transition = 'all 0.3s ease';
+        parentCard.style.boxShadow = isUp ? '0 0 15px rgba(16, 185, 129, 0.25)' : '0 0 15px rgba(239, 68, 110, 0.25)';
+        setTimeout(() => {
+          parentCard.style.boxShadow = '';
+        }, 800);
+      }
+    }, 5000);
+  </script>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3><i class="fa-solid fa-leaf"></i> GoldenRoot</h3>
+        <p><strong>From Soil to Success.</strong><br>Empowering Farmers. Enabling Business. Delivering Wellness.</p>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="types.html">Turmeric Types</a></li>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="#">Wholesale Inquiries</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><i class="fa-solid fa-envelope"></i> patilkundan6522@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +91 9689212775</p>
+        <p><i class="fa-solid fa-location-dot"></i> Plot no 3 gaytri nagar station road Raver</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 GoldenRoot Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+  <div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button class="close-cart" onclick="toggleCart()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-items" id="cart-items-container">
+      <!-- Cart items injected via JS -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Subtotal</span>
+        <span id="cart-total-price">₹0.00</span>
+      </div>
+      <p class="taxes-notice">Taxes and shipping calculated at checkout</p>
+      <button class="btn btn-primary checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <script>
+    // Navigation Hamburger
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+      });
+    });
+
+    // Cart Logic
+    let cart = JSON.parse(localStorage.getItem('goldenRootCart')) || [];
+
+    function saveCart() {
+      localStorage.setItem('goldenRootCart', JSON.stringify(cart));
+      renderCart();
+    }
+
+    function addToCart(id, name, price, img) {
+      const existing = cart.find(item => item.id === id);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push({ id, name, price, img, quantity: 1 });
+      }
+      saveCart();
+      const overlay = document.querySelector('.cart-overlay');
+      if (!overlay.classList.contains('active')) {
+        toggleCart(); // Open cart to show user
+      }
+    }
+
+    function removeFromCart(id) {
+      cart = cart.filter(item => item.id !== id);
+      saveCart();
+    }
+
+    function updateQuantity(id, delta) {
+      const item = cart.find(item => item.id === id);
+      if (item) {
+        item.quantity += delta;
+        if (item.quantity <= 0) removeFromCart(id);
+        else saveCart();
+      }
+    }
+
+    function renderCart() {
+      const container = document.getElementById('cart-items-container');
+      const badgeContainer = document.getElementById('nav-cart-badge');
+      const totalPriceEl = document.getElementById('cart-total-price');
+
+      let totalItems = 0;
+      let totalPrice = 0;
+
+      container.innerHTML = '';
+
+      if (cart.length === 0) {
+        container.innerHTML = '<p class="empty-cart"><i class="fa-solid fa-basket-shopping"></i><br>Your cart is empty.</p>';
+      } else {
+        cart.forEach(item => {
+          totalItems += item.quantity;
+          totalPrice += item.price * item.quantity;
+
+          container.innerHTML += `
+            <div class="cart-item">
+              <img src="${item.img}" alt="${item.name}">
+              <div class="cart-item-details">
+                <h4>${item.name}</h4>
+                <div class="cart-item-price">₹${item.price.toFixed(2)}</div>
+                <div class="cart-item-quantity">
+                  <button onclick="updateQuantity(${item.id}, -1)">-</button>
+                  <span>${item.quantity}</span>
+                  <button onclick="updateQuantity(${item.id}, 1)">+</button>
+                </div>
+              </div>
+              <button class="remove-item" onclick="removeFromCart(${item.id})"><i class="fa-solid fa-trash"></i></button>
+            </div>
+          `;
+        });
+      }
+
+      badgeContainer.textContent = totalItems;
+      totalPriceEl.textContent = '₹' + totalPrice.toFixed(2);
+    }
+
+    function toggleCart() {
+      document.getElementById('cart-sidebar').classList.toggle('active');
+      document.getElementById('cart-overlay').classList.toggle('active');
+    }
+
+    function checkout() {
+      if (cart.length === 0) return alert('Your cart is empty');
+      alert('Proceeding to checkout with ' + cart.length + ' items!\nTotal: ₹' + document.getElementById('cart-total-price').innerText.replace('₹', ''));
+    }
+
+    // Initial render
+    renderCart();
+
+    // Change nav style on scroll
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
+  <script src="cursor.js"></script>
+</body>
+
+</html>

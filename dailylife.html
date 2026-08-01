@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Root | Premium Organic Turmeric</title>
+  <link rel="stylesheet" href="style.css?v=4">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <p>10% Off Today - Use Code <strong>GOLDEN10</strong> at Checkout</p>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <i class="fa-solid fa-leaf"></i> GoldenRoot
+      </div>
+      <div class="nav-links-wrapper">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="types.html">Turmeric Types</a></li>
+          <li><a href="dailylife.html">Daily Life</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="nav-icons">
+        <a href="types.html#live-market-section" class="market-nav-icon" title="Check Live Turmeric Market Rates">
+          <i class="fa-solid fa-chart-line"></i>
+          <span class="live-pulse-dot"></span>
+        </a>
+        <div class="cart-icon-wrapper" onclick="toggleCart()">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-badge" id="nav-cart-badge">0</span>
+        </div>
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Importance Section -->
+  <section id="importance" class="importance">
+    <div class="importance-container">
+      <div class="importance-image">
+        <img src="assets/turmeric_roots.png" alt="Natural Turmeric Roots">
+        <img src="assets/turmeric_powder.png" alt="Turmeric Powder" class="overlay-img">
+      </div>
+      <div class="importance-content">
+        <h2>The Importance of Turmeric in <span>Daily Life</span></h2>
+        <p>A staple in Ayurvedic medicine and culinary traditions, turmeric is more than just a vibrant spice. It's a
+          natural healer that brings wellness into your everyday routine.</p>
+
+        <div class="importance-list">
+          <div class="list-item">
+            <i class="fa-solid fa-mug-hot"></i>
+            <div>
+              <h4>Immunity Boosting Golden Milk</h4>
+              <p>A warm cup of turmeric milk at night helps fight off colds, soothes the throat, and promotes deep,
+                restful sleep.</p>
+            </div>
+          </div>
+          <div class="list-item">
+            <i class="fa-solid fa-utensils"></i>
+            <div>
+              <h4>Culinary Magic</h4>
+              <p>Adding a pinch of turmeric to your curries, soups, and roasted vegetables enhances flavor while
+                bringing out a rich, golden hue.</p>
+            </div>
+          </div>
+          <div class="list-item">
+            <i class="fa-solid fa-spa"></i>
+            <div>
+              <h4>Natural Skincare</h4>
+              <p>Rich in antioxidants and antibacterial properties, turmeric paste is traditionally used to achieve
+                glowing, blemish-free skin.</p>
+            </div>
+          </div>
+          <div class="list-item">
+            <i class="fa-solid fa-person-running"></i>
+            <div>
+              <h4>Joint & Muscle Relief</h4>
+              <p>Curcumin, its active compound, actively combats inflammation, reducing joint pain and speeding up
+                muscle recovery after activities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3><i class="fa-solid fa-leaf"></i> GoldenRoot</h3>
+        <p><strong>From Soil to Success.</strong><br>Empowering Farmers. Enabling Business. Delivering Wellness.</p>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#products">Shop</a></li>
+          <li><a href="#">Wholesale Inquiries</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><i class="fa-solid fa-envelope"></i> patilkundan6522@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +91 9689212775</p>
+        <p><i class="fa-solid fa-location-dot"></i> Plot no 3 gaytri nagar station road Raver</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 GoldenRoot Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+  <div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button class="close-cart" onclick="toggleCart()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-items" id="cart-items-container">
+      <!-- Cart items injected via JS -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Subtotal</span>
+        <span id="cart-total-price">₹0.00</span>
+      </div>
+      <p class="taxes-notice">Taxes and shipping calculated at checkout</p>
+      <button class="btn btn-primary checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <script>
+    // Navigation Hamburger
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+      });
+    });
+
+    // FAQ Accordion
+    const faqs = document.querySelectorAll('.faq-question');
+    faqs.forEach(faq => {
+      faq.addEventListener('click', () => {
+        faq.classList.toggle('active');
+        const answer = faq.nextElementSibling;
+        if (faq.classList.contains('active')) {
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        } else {
+          answer.style.maxHeight = '0';
+        }
+      });
+    });
+
+    // Cart Logic
+    let cart = JSON.parse(localStorage.getItem('goldenRootCart')) || [];
+
+    function saveCart() {
+      localStorage.setItem('goldenRootCart', JSON.stringify(cart));
+      renderCart();
+    }
+
+    function addToCart(id, name, price, img) {
+      const existing = cart.find(item => item.id === id);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push({ id, name, price, img, quantity: 1 });
+      }
+      saveCart();
+      const overlay = document.querySelector('.cart-overlay');
+      if (!overlay.classList.contains('active')) {
+        toggleCart(); // Open cart to show user
+      }
+    }
+
+    function removeFromCart(id) {
+      cart = cart.filter(item => item.id !== id);
+      saveCart();
+    }
+
+    function updateQuantity(id, delta) {
+      const item = cart.find(item => item.id === id);
+      if (item) {
+        item.quantity += delta;
+        if (item.quantity <= 0) removeFromCart(id);
+        else saveCart();
+      }
+    }
+
+    function renderCart() {
+      const container = document.getElementById('cart-items-container');
+      const badgeContainer = document.getElementById('nav-cart-badge');
+      const totalPriceEl = document.getElementById('cart-total-price');
+
+      let totalItems = 0;
+      let totalPrice = 0;
+
+      container.innerHTML = '';
+
+      if (cart.length === 0) {
+        container.innerHTML = '<p class="empty-cart"><i class="fa-solid fa-basket-shopping"></i><br>Your cart is empty.</p>';
+      } else {
+        cart.forEach(item => {
+          totalItems += item.quantity;
+          totalPrice += item.price * item.quantity;
+
+          container.innerHTML += `
+            <div class="cart-item">
+              <img src="${item.img}" alt="${item.name}">
+              <div class="cart-item-details">
+                <h4>${item.name}</h4>
+                <div class="cart-item-price">₹${item.price.toFixed(2)}</div>
+                <div class="cart-item-quantity">
+                  <button onclick="updateQuantity(${item.id}, -1)">-</button>
+                  <span>${item.quantity}</span>
+                  <button onclick="updateQuantity(${item.id}, 1)">+</button>
+                </div>
+              </div>
+              <button class="remove-item" onclick="removeFromCart(${item.id})"><i class="fa-solid fa-trash"></i></button>
+            </div>
+          `;
+        });
+      }
+
+      badgeContainer.textContent = totalItems;
+      totalPriceEl.textContent = '₹' + totalPrice.toFixed(2);
+    }
+
+    function toggleCart() {
+      document.getElementById('cart-sidebar').classList.toggle('active');
+      document.getElementById('cart-overlay').classList.toggle('active');
+    }
+
+    function checkout() {
+      if (cart.length === 0) return alert('Your cart is empty');
+      alert('Proceeding to checkout with ' + cart.length + ' items!\nTotal: ₹' + document.getElementById('cart-total-price').innerText.replace('₹', ''));
+    }
+
+    // Initial render
+    renderCart();
+
+    // Change nav style on scroll
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  </script>
+  <script src="cursor.js"></script>
+</body>
+
+</html>
