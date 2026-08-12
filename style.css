@@ -1186,6 +1186,14 @@ footer {
   flex-grow: 1;
 }
 
+.video-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+
+
 /* Video Callout Banner */
 .video-callout-banner {
   padding: 60px 5%;
